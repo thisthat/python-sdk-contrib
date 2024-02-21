@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/thisthat/python-sdk-contrib/compare/hooks/opentelemetry/v0.1.2...hooks/opentelemetry/v0.1.3) (2024-02-21)
+
+
+### ✨ New Features
+
+* remove deleteme ([4a58151](https://github.com/thisthat/python-sdk-contrib/commit/4a58151f28dfdb00f62cfd78cd8d544294f318c1))
+
 ## [0.1.2](https://github.com/thisthat/python-sdk-contrib/compare/hooks/opentelemetry-v0.1.1...hooks/opentelemetry/v0.1.2) (2024-02-21)
 
 
