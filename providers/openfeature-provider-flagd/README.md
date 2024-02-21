@@ -8,7 +8,7 @@ This provider is designed to use flagd's [evaluation protocol](https://github.co
 pip install openfeature-provider-flagd
 ```
 
-## Configuration and Usage
+## Configuration and Usage 
 
 Instantiate a new FlagdProvider instance and configure the OpenFeature SDK to use it:
 
