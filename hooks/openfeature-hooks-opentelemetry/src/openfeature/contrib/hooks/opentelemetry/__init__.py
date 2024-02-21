@@ -6,7 +6,7 @@ from opentelemetry import trace
 
 OTEL_EVENT_NAME = "feature_flag"
 
-#DELETEME
+
 class EventAttributes:
     FLAG_KEY = f"{OTEL_EVENT_NAME}.key"
     FLAG_VARIANT = f"{OTEL_EVENT_NAME}.variant"
