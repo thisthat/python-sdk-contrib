@@ -35,6 +35,9 @@ jobs:
     needs: release-please
     runs-on: ubuntu-latest
     if: ${{ needs.release-please.outputs.release_created }}
+    strategy:
+      matrix:
+        path: ${{ fromJSON(needs.release-please.outputs.paths_released) }}
     environment: release
     permissions:
       # IMPORTANT: this permission is mandatory for trusted publishing to pypi
@@ -59,8 +62,15 @@ jobs:
       - name: Install hatch
         run: pip install hatch
 
+      - name: Debug file
+        run: ls -al
+
+      - name: Debug path
+        run: ls -al ${{ matrix.path }}
+
       - name: Build a binary wheel and a source tarball
         run: hatch build
+        working-directory: ${{ matrix.path }}
 
       - name: Debug
         run: ls -alR ./dist
